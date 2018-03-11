@@ -1,5 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>Oorga</title>
-	<script>%MINIFYHTML72f9059869141834c610bb764670cf776%</script>
+	<script>(function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();</script>
 	 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114755299-1"></script><script>window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
